@@ -1,0 +1,39 @@
+footer 
+  background: #343a40
+  margin-top: 1.5rem
+.footer
+  width: 90% 
+  margin: 0 auto
+  padding: 1.4rem 0
+
+  @include mediaMin(1024)
+    display: flex
+    justify-content: center
+    align-items: center
+  &__copy
+    @include mediaMin(1024)
+      width: 60%  
+    >p
+      color: $blanco
+      font-size: responsive 15px 15px
+      text-align: center
+  &__item 
+    padding-top: 1rem
+    display: flex
+    justify-content: center
+    align-items: center
+
+    @include mediaMin(1024)
+      width: 40%
+    &__social
+      margin: 0 .5rem 
+      background: #222
+      width: 40px
+      height: 40px
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      >i
+        color: #7e7e7e
+  

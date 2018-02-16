@@ -1,0 +1,66 @@
+.progettievidenza
+  width: 90%
+  margin: 0 auto
+  padding: 4rem 0
+  &__title
+    padding: 2rem 0
+    >h2 
+      font-size: $sizeTitle
+  &__project
+    @include mediaMin(768)
+      display: flex
+      justify-content: space-between
+      align-items: center
+      
+  
+    &__item
+      margin: 1.5rem 0
+      box-shadow: 0 4px 30px rgba($negro,.3)
+      border-radius: 2px
+      @include mediaMin(768)
+        width: 33%
+      @include mediaMin(1024)
+        width: 32%
+      >figure 
+        position: relative
+        width: 100%
+        margin: 0 auto
+        &:before
+          position: absolute
+          top: 35%
+          left: 40%
+          
+          content: "\f144"
+          font-family: 'FontAwesome'
+          color: $blanco
+          opacity: .9
+          text-shadow: 0 0 30px rgba(0,0,0,.5)
+          font-size: 70px
+          
+          @include mediaMin(768)
+            top: 30%
+            left: 35%
+          @include mediaMin(1024)
+            top: 35%
+            left: 40%          
+        >img 
+          width: 100%
+          max-width: 100%
+
+      .description__progetti
+        padding: 0
+        width: 90%
+        margin: 0 auto
+        .description__title__progetti
+          >span 
+            font-size: $sizeTitleCard
+            font-weight: bold
+        .description__text__progetti
+          width: 100%
+          margin: 0 auto   
+          padding: 0       
+          >p 
+            font-size: $sizeDescription
+            line-height: 1.4
+            padding-bottom: 1rem
+            color: $textParrafo

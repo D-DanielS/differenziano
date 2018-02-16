@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Differenziano
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,500")
+    link(rel="stylesheet", href="./css/style.css")
+    
+
+    
+
+  body
+    nav 
+      include ./includes/nav/nav.pug
+      +menu()
+
+    header 
+      include ./includes/header/header.pug
+
+    section 
+      include ./includes/contadores/contadores.pug
+
+    section 
+      include ./includes/description/description.pug
+    
+    section 
+      include ./includes/cercacomini/cercacomini.pug
+    
+    section 
+      include ./includes/progettievidenza/progettievidenza.pug
+      
+    section 
+      include ./includes/mapsproyect/mapsproyect.pug
+    
+    section 
+      include ./includes/empresas/empresas.pug
+    
+    section 
+      include ./includes/newsletter/newsletter.pug
+    footer 
+      include ./includes/footer/footer.pug
+      
+    script(src="../js/nav.js")

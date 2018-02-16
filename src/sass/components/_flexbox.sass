@@ -1,0 +1,22 @@
+@mixin flex 
+  display: flex !important
+  flex-wrap: wrap
+
+@mixin mainJustify 
+  @include flex
+  justify-content: space-between
+  align-items: center
+
+@mixin mainDistribute 
+  @include flex
+  justify-content: space-around
+  align-items: center
+
+@mixin mainCenter 
+  @include flex
+  justify-content: center
+  align-items: center
+
+
+
+

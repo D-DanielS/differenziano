@@ -1,0 +1,100 @@
+mixin nav(active)
+    
+    .nav
+        .nav__movil
+            a(href="#")
+                figure
+                    img(src="./images/logo.png", alt="image")
+            i.fa.fa-bars.fa-2x#iconMenu.iconMenu
+
+
+        ul.nav__web#menu
+            if(active === 'inicio')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") inicio
+            else 
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") inicio
+
+
+            if(active === 'cursos')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") cursos
+            else 
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") cursos
+
+
+            if(active === 'servicios')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") servicios
+            else
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") servicios
+            
+            if(active === 'placement')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") placement test
+            else
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") placement test
+
+
+            if(active === 'the-yes-factor')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") yes factor
+            else
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") yes factor
+            
+            
+            if(active === 'blog')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") blog
+            else
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") blog
+
+
+            if(active === 'contactenos')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") contáctenos
+            else
+
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") contáctenos      
+
+            
+
+            
+           
+
+
+
+mixin menu()
+    .nav
+        .nav__movil
+            a(href="#")
+                figure
+                    img(src="./images/logo.png", alt="image")
+            i.fa.fa-bars.fa-2x#iconMenu.iconMenu
+
+        ul.nav__web#menu
+            li.nav__web__items
+                a.nav__web__items__link(href="#") Come funiona
+            
+            li.nav__web__items
+                a.nav__web__items__link(href="#") Comini
+          
+            li.nav__web__items
+                a.nav__web__items__link(href="#") Progetti
+            
+            li.nav__web__items
+                a.nav__web__items__link(href="#") Contacti
+
+            li.nav__web__items
+                a.nav__web__items__link(href="#").signin Sign in
+            
+            
+
+            

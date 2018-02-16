@@ -1,0 +1,41 @@
+.empresas
+  width: 90% 
+  margin: 0 auto
+  @include mediaMin(1024)
+    padding: 4rem 0
+    padding-bottom: 1rem
+  &__title 
+    paddint: 1.3rem 0
+    >h2
+      font-size: $sizeTitle
+      font-family: $ubuntu
+  
+  &__logo__container
+    .empresas__logo
+      margin: 1.5rem 0
+      &__title
+        >h3
+          font-size: $sizeTitleCard
+          color: $title
+          text-align: center
+          padding: 1rem 0
+
+      &__image 
+        >figure
+          >img
+            width: 100%
+            max-width: 100%
+      &__item__button 
+        padding: 0
+        text-decoration: none
+        >p 
+          background: #3f454a
+          color: $blanco
+          padding: .8rem 0
+          margin-top: -.5rem
+          text-align: center
+          font-size: responsive 15px 16px 
+          &:hover
+            background: orange
+
+        

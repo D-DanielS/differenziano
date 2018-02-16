@@ -1,0 +1,83 @@
+nav
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 100
+    
+    box-shadow: 0 0 10px rgba($negro, .6)
+    
+.nav
+    background: $blanco
+    &__movil 
+        @include mainJustify
+        padding: .5em 1em
+        >a 
+            >figure
+                width: 100px
+                >img 
+                    @include width
+        .iconMenu
+            color: $negro
+            cursor: pointer
+        
+
+
+    &__web
+        display: none
+        &__items
+            @include mainCenter
+            flex: auto
+            background: $blanco
+            text-align: center
+            margin: 0 .1em
+            border-top: 1px solid $line
+            &:hover
+                transition: .1s all
+                box-shadow: 3000px 0 $rojo inset
+
+
+                
+                    
+               
+
+            &__link
+                // display: block
+                width: 100%
+                text-transform: uppercase
+                color: $title
+                line-height: 4
+                text-decoration: none
+                font-size: responsive 16px 17px
+                font-family: $ubuntu
+                font-weight: 300
+                letter-spacing: 1px
+                border-bottom: 3px solid transparent
+                
+                &:hover
+                    color: $blanco
+                    text-decoration: none
+                    transition: all .3s
+
+
+
+
+.select-active
+    box-shadow: 3000px 0 $rojo inset
+    color: $blanco
+    border-bottom: 3px solid darken($rojo, 10)
+
+.ocultarMenu
+    display: none 
+
+.menuActive
+    display: block
+
+.menu-show
+    display: flex !important
+    flex-direction: column  
+
+.signin
+  background: orange
+  &:hover 
+    background: orange !important

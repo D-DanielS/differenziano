@@ -1,0 +1,29 @@
+
+/* Background image*/
+
+@mixin bgi($bgs: cover , $bgp: center )
+    background-size: $bgs !important
+    background-position: $bgp
+    background-repeat: no-repeat !important
+
+
+
+@mixin url-images($nombre , $formato: png)
+    background-image: url("../images/" + $nombre + "." + $formato)
+
+
+
+/*Ancho Alto*/
+
+@mixin widthHeight($w, $h)
+    width: $w
+    height: $h
+
+
+@mixin width($w: 100%, $maxw: 100%)
+    width: $w
+    max-width: $maxw !important
+
+
+
+

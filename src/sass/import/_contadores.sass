@@ -1,0 +1,48 @@
+.contadores
+  width: 90%
+  margin: 2rem auto
+  &__title
+    padding: 1rem 0
+    @include mediaMin(1024)
+      width: 80%
+      margin: 0 auto
+      margin-bottom: 1.5rem
+      padding: 3rem 0
+    
+    >h2 
+      font-size: $sizeTitle
+      text-transform: uppercase
+      text-align: center
+      font-family: $ubuntu
+
+  &__container
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    width: 100%
+    margin: 0 auto
+    
+      
+    &__item
+      width: 45%
+      margin: .5rem
+      text-align: center
+      @include mediaMin(1024)
+        width: 30%
+      @include mediaMin(1200)
+        width: 18%
+
+       
+
+      &__title
+        font-size: $sizeContador
+        color: $title
+      &__num
+        font-size: $sizeContadorNum
+        font-weight: bold
+        text-align: center
+        color: $textParrafo
+
+.amarillo
+  color: $amarillo !important

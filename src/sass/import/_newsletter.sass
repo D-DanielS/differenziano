@@ -1,0 +1,37 @@
+.newsletter
+  width: 90%
+  margin: 4rem auto
+  @include mediaMin(1024)
+    width: 50%
+    margin: 4rem auto
+  
+  &__title
+    margin-top: 2rem
+    @include mediaMin(1024)
+    margin-bottom: 3rem
+    >h2
+      font-size: $sizeTitle
+      text-align: center
+      color: $title
+      font-family: $ubuntu
+  &__input
+    display: flex
+    justify-content: center
+    align-items: center
+    box-shadow: 0 5px 30px rgba($negro,.2)
+    margin-top: 1rem
+    >input 
+      width: 70%
+      line-height: 3
+      border-radius: 4px 0 0 4px
+      border: none
+    >button
+      line-height: 3
+      width: 30%
+      text-align: center
+      background: #04cc80
+      color: $blanco   
+      border: none 
+      border-radius: 0 4px 4px 0
+      font-size: $sizeButton
+      font-family: $ubuntu

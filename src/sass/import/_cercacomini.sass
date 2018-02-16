@@ -1,0 +1,49 @@
+
+.cercacomini
+  padding: 1rem 0
+  width: 90%
+  margin: 0 auto
+  &__title
+    >h2 
+      font-size: $sizeTitle
+      color: $title
+      font-family: $ubuntu
+  &__form
+      >form
+        @include mediaMin(1024)
+          display: flex
+          justify-content: space-between
+          align-items: center
+        .item
+          margin: 1.7rem 0
+          @include mediaMin(1024)
+            width: 24%
+          
+          >input 
+            border: 1px solid $line
+            line-height: 3.5
+            padding-left: .8rem 
+            width: 100%
+            border-radius: 4px
+            font-size: responsive 14px 15px
+
+        .button
+          margin: 0 auto
+          text-align: center
+          @include mediaMin(1024)
+            margin: 0
+          
+          >button 
+            border: none
+            padding: .5rem 4rem
+            background: $amarillo
+            color: $blanco
+            border-radius: 20px
+            font-size: $sizeButton
+            font-weight: 300
+            font-family: $ubuntu
+  &__text
+    >p
+      margin-top: 1rem
+      font-size: $sizeParrafo
+      color: $textParrafo

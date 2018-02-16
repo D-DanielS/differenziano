@@ -1,0 +1,47 @@
+.header
+  &__container
+    margin-top: 4.5rem
+    background-image: url('../images/header.png')
+    height: 400px
+    width: 100%
+    background-size: cover
+    background-repeat: no-repeat
+
+    display: flex
+
+    @include mediaMin(1024)
+      height: 500px  
+    @include mediaMax(1400)
+      max-height: 600px
+  &__text
+    display: flex
+    justify-content: center
+    flex-direction: column
+    margin: 0 auto
+    flex-wrap: wrap
+    background: rgba($negro,.65)
+
+    &__title,
+    &__parrafo
+      width: 90%
+      margin: 0 auto
+      color: $blanco
+      font-weight: 300
+      text-align: center
+
+
+    &__title
+      text-align: center
+      font-size: $sizeHeaderTitle
+      font-family: $ubuntu
+
+    &__parrafo
+      padding-top: 2em
+      text-align: left
+      font-size: $sizeHeaderText
+      line-height: 1.4
+      font-family: $ubuntu
+      font-weight: 400
+      
+
+      

@@ -1,0 +1,44 @@
+@include mediaMin(640)
+    .nav
+        &__movil 
+            padding-left: 2em
+            padding-right: 2.5em  
+            
+@include mediaMin(1024)
+    .nav
+        &__movil 
+            padding-left: 4em
+
+      
+@include mediaMin(1024)
+    .iconMenu 
+        display: none
+
+    .nav
+        display: flex 
+        align-items: center
+        padding: 0 1em
+        &__movil 
+            width: 40%
+        &__web 
+            width: 60%
+            display: flex 
+            align-items: center
+            justify-content: center 
+            &__items
+                border: none
+                &:hover
+                    box-shadow: none
+                    
+                &__link 
+                    line-height: 2
+                    &:hover
+                        color: $rojo
+                .signin
+                    border-radius: 20px     
+                    color: $blanco                   
+                    &:hover 
+                        color: darken($amarillo, 30)
+                    
+   
+        

@@ -1,0 +1,10 @@
+/*media queris*/
+
+@mixin mediaMin($w)
+    @media screen and(min-width: $w + "px")
+        @content
+
+
+@mixin mediaMax($w)
+    @media screen and(max-width: $w + "px")
+        @content
